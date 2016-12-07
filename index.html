@@ -8,306 +8,167 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css">
-
-    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="header">
-      <div class="logoimg">
-        <a href="" title="Bootstrap 优站精选"><img src="images/22ccaf4c24ef690f7767e6a3ba5f0.png" alt="Bootstrap 优站精选" width="78"></a>
-      </div>
+  <!-- 响应式导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+       <div class="navbar-header">
+         <a href="#" class="navbar-brand logo">品牌LOGO</a>
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+       </div>
+       <div class="collapse navbar-collapse" id="navbar-collapse">
+         <ul class="nav navbar-nav navbar-right" style="margin-top:0;">
+          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+          <li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+          <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+          <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+        </ul>
+       </div>        
+      </div>
+    </nav>
+
+   <!-- 响应式轮播 -->
+   <div class="carousel slide" id="myCarousel">
+     <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+     <div class="carousel-inner">
+       <div class="item active">
+         <img src="image/1.png" alt="第一张">
+       </div>
+       <div class="item">
+         <img src="image/2.jpg" alt="第二张">
+       </div>
+       <div class="item">
+         <img src="image/3.jpg" alt="第三张">
+       </div>
+     </div>
+     <!-- <a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+     <a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a> -->
+     <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+       <span class="glyphicon glyphicon-chevron-left"></span>
+     </a>
+     <a href="#myCarousel" data-slide="next" class="carousel-control right">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+     </a>
+   </div>
+  <!-- tab选项 -->
+    <div class="tab1">
+      <div class="container">
+        <h2 class="tab-h2">[为什么选择bootstrap]</h2>
+        <p class="tab-p">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
         <div class="row">
-          <div class="col-xs-12">
-            <div class="logotxt">
-              <h1><a href="">Bootstrap</a></h1>
-            </div>
-            <h2>优站精选<span>www.youzhan.org</span></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <main class="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">BootCDN</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/c7c0f84982513f645380d3eddc1c3.png!thumb" alt=""></a>
+          <div class="col-md-6 col">
+            <div class="media">
+              <div class="media-left">
+                <a href=""><img class="media-object thumb" src="image/4.jpg"></a>
               </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Larave中文网</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/1e21f1e2140c17735fa2d9ca8c55d.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">GoDesignerGo</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/8faa441e1b8ef25bf05c2db9fad94.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Apache Software Foundation</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/ede117f0efea39172a6e2cb548ea8.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">i黑马</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/def080cce2b751ddcdcd9ca2a892d.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">SocialAll</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/a72d8f6856b3c80354f0e382c17b8.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">safelink</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/ab0998220ca23788a398672ba10dd.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Tuittio</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/2de4004439e68368a3157dbfd8f90.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Mockstar</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/226561b3816878dda152aa1e2181f.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Slideflight</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/1b02232e0cb2ce0dd6ecdf4a0dc5e.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">Kudop</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/b6bf5cdce4228d102e19ec7cc4d78.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-xs-12  col-md-6">
-            <article class="post">
-              <h2 class="post-text"><a href="">SpotOut</a></h2>
-              <div class="post-img">
-                <a href=""><img src="images/2ceb77bec53d768a10835af32f05d.png!thumb" alt=""></a>
-              </div>
-            </article>
-          </div>
-        </div>
-        <nav class="pagination">
-          <span>第 1 页/共 43 页</span>
-          <a href="">下一页 →</a>
-        </nav>
-      </div>
-    </main>
-    <div class="submit-size">
-      <div class="container">
-        <div class="submit">
-          <p class="text-center">如果你的网站基于<a href="">Bootstrap</a>构建、并且用心的设计，那就提交到<a href="">youzhan@bootcss.com</a>在这里展示吧！</p>
-          <p class="text-center">请注明“Bootstrap网站作品提交--你的网址”</p>
-        </div>
-      </div>
-    </div>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="widget">
-              <h4 class="title">友情链接</h4>
-              <div class="friend-links">
-                <a href="">Bootstrap中文网</a>
-                <a href="">Laravel中文网</a>
+              <div class="media-body">
+                <h4 class="media-heading">bootstrap</h4>
+                <p class="text-muted">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+                <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="widget">
-              <h4 class="title">我们用到的技术</h4>
-              <div class="tag-cloud">
-                <a href="">Bootstrap</a>
-                <a href="">Ghost</a>
-                <a href="">BootCDN</a>
-                <a href="">Grunt</a>
-                <a href="">jQuery</a>
-                <a href="">Babeljs</a>
-                <a href="">Lodash</a>
-                <a href="">Gulp</a>
+          <div class="col-md-6 col">
+            <div class="media">
+              <div class="media-left">
+                <a href=""><img class="media-object thumb" src="image/5.jpg"></a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">bootstrap</h4>
+                <p class="text-muted">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+                <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="widget">
-              <h4 class="title">赞助商</h4>
-              <div class="friend-links">
-                <a href="">又拍云</a>
+          <div class="col-md-6 col">
+            <div class="media">
+              <div class="media-left">
+                <a href=""><img class="media-object thumb" src="image/5.jpg"></a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">bootstrap</h4>
+                <p class="text-muted">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+                <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col">
+            <div class="media">
+              <div class="media-left">
+                <a href=""><img class="media-object thumb" src="image/5.jpg"></a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">bootstrap</h4>
+                <p class="text-muted">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+                <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <span>Copyright © <a href="http://expo.bootcss.com">优站精选</a></span>
-            |
-            <span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></span>
-          </div>
-        </div>
-      </div>
     </div>
-  	<!-- <span class="glyphicon-cloud" style="font-size:84px;color:red;font-style:italic"></span>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-xs-pull-1">1</div>
-        <div class="col-xs-6">2</div>
+<!-- 首页内容介绍 -->
+
+<div class="tab2">
+  <div class="container">
+    <div class="row">      
+       
+      <div class="col-md-6 col-sm-6 text">
+        <h3 class="texts">前端开发框架</h3>
+        <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
       </div>
+      <div class="col-md-6 img">
+        <img class="img-responsive center-block auto" src="image/4.jpg">
+      </div> 
     </div>
-    <div class="container-fluid" style="background-image:linear-gradient(#333,#000);height:100px;color:#fff;text-align:center;line-height:100px;font-size:18px">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">logo</div>
-          <div class="col-md-8">
-            <div class="row" style="background:black">
-              <div class="col-md-2">1111</div>
-              <div class="col-md-2">2222</div>
-              <div class="col-md-2">3333</div>
-              <div class="col-md-2">4444</div>
-              <div class="col-md-2">5555</div>
-              <div class="col-md-2">6666</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
+</div>
+
+<div class="tab2">
+  <div class="container">
+    <div class="row">      
+      <div class="col-md-6 img">
+        <img class="img-responsive center-block auto" src="image/4.jpg">
+      </div> 
+      <div class="col-md-6 col-sm-6 text">
+        <h3 class="texts">前端开发框架</h3>
+        <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+      </div> 
     </div>
-    <div class="container">      
-        <div class="row rows">
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3"></div>
-        </div>
-        </div> -->
+  </div>
+</div>
+
+
+
+<footer id="footer">
+  <div class="container">
+    <p>前端开发框架</p>
+    <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+  </div>
+</footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
-<style>
-	/* .rows div{
-    background-color: #888;
-    background-clip: content-box;
-    height:80px;
-    padding-top: 20px;
-  }
-  .container{
-    padding:0 15px;
-    margin:0 auto;
-  }
-  .container::before,.row::before{
-         content: " ";
-         display: table;
-  }
-  .container::after,.row::after{
-         content: " ";
-         display: block;
-         clear:both;
-  }
-  .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{
-    float:left;
-    position: relative;
-    padding: 0 15px;
-    min-height: 1px;
-    box-sizing:border-box;
-  }
-  .col-xs-1{
-    width:8.3333%;
-  }
-  .col-xs-2{
-    width:16.6666%;
-  }
-  .col-xs-3{
-    width:25%;
-  }
-  .col-xs-4{
-    width:33.3333%;
-  }
-  .col-xs-5{
-    width:41.6666%;
-  }
-  .col-xs-6{
-    width:50%;
-  }
-  .col-xs-7{
-    width:58.3333%;
-  }
-  .col-xs-8{
-    width:66.6666%;
-  }
-  .col-xs-9{
-    width:75%;
-  }
-  .col-xs-10{
-    width:83.3333%;
-  }
-  .col-xs-11{
-    width:91.6666%;
-  }
-  .col-xs-12{
-    width:100%;
-  }
-  @media(min-width: 768px){
-  
-  } */
-
-</style>
